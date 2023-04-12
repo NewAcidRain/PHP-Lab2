@@ -9,8 +9,9 @@ class Product extends Model
 {
     use HasFactory;
 
+    protected $guarded = [];
     public function category():\Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(Category::class,'category_id','id');
+        return $this->belongsTo(Category::class,'category_id','id')->orderBy('id');
     }
 }

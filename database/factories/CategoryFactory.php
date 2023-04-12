@@ -19,7 +19,7 @@ class CategoryFactory extends Factory
     public function definition(): array
     {
         return [
-            'title' => fake()->title,
+            'title' => fake()->words(1,true),
             'symbolic_code' => fake()-> uuid,
             'active' => true,
             'creation_date' => fake()->dateTime,

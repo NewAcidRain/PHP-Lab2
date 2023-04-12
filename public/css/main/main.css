@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+}
+
+.boxes{
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.title{
+    margin-bottom: 10px;
+}
+
+.img{
+    width: 50px;
+}
+
+.products{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    width: 250px;
+    align-items: center;
+    height: 200px;
+    border-radius: 15px;
+}
+.categories{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    width: 250px;
+    align-items: center;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-links{
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+}

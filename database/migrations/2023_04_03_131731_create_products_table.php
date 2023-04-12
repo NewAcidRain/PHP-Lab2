@@ -18,7 +18,7 @@ return new class extends Migration
             $table->text('description');
             $table->dateTime('creation_date');
             $table->unsignedInteger('price');
-            $table->string('img');
+            $table->string('img')->nullable();
             $table->string('quantity');
             $table->timestamps();
 
