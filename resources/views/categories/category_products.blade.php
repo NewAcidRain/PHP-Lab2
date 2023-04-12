@@ -39,7 +39,7 @@
                     <div class="products">
                         <div class="title">{{$product->title}}</div>
                         @if($product->img)
-                            <img class="product-pic" src="{{asset($product->img)}}" alt="">
+                            <img class="product-pic" src="{{asset('storage/img/'.$product->img)}}" alt="">
                         @else
                             <img class="product-pic" src="{{asset('/storage/img/icons/box2.svg')}}">
                         @endif
