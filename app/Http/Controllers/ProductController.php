@@ -44,7 +44,7 @@ class ProductController extends Controller
             'quantity' => "int",
         ]);
 
-        $path = public_path().'\img\\';
+        $path = public_path().'/img/';
         if($code->img != ''  && $code->img != null && $path != $path.'\icons\\')
         {
             $file_old = $path.$code->img;

@@ -6,4 +6,8 @@ RUN set -ex \
     	&& apk --no-cache add postgresql-dev nodejs yarn npm\
     	&& docker-php-ext-install pdo pdo_pgsql
 
+RUN docker-php-ext-install opcache
+COPY ./docker/php-fpm/opcache.ini /usr/local/etc/php/conf.d/opcache.ini
+COPY . /var/www/html
+
 WORKDIR /var/www/html
