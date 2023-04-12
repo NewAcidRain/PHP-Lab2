@@ -41,7 +41,7 @@
                         @if($product->img)
                             <img class="product-pic" src="{{asset($product->img)}}" alt="">
                         @else
-                            <img class="product-pic" src="{{asset('img/icons/box2.svg')}}">
+                            <img class="product-pic" src="{{asset('storage/img/icons/box2.svg')}}">
                         @endif
                         <div class="price">{{$product->price}}₽</div>
                     </div>

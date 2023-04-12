@@ -14,7 +14,7 @@
         <div class="title">{{$code->title}}</div>
     @if($code->img)
         <div class="img-price-block">
-            <div class="img"><img class="img-pic active" style="width: 300px" src="{{asset('img/'.$code->img)}}"></div>
+            <div class="img"><img class="img-pic active" style="width: 300px" src="{{asset('storage/img/'.$code->img)}}"></div>
             <div class="price-quantity-block">
                 <div class="price">{{$code->price}}₽</div>
                 <div class="quantity">Remaining in stock: {{$code->quantity}}</div>
@@ -23,7 +23,7 @@
         </div>
         @else
         <div class="img-price-block">
-            <div class="img"><img class="img-pic" style="width: 300px;height: 500px" src="{{asset('img/icons/box2.svg')}}"></div>
+            <div class="img"><img class="img-pic" style="width: 300px;height: 500px" src="{{asset('storage/img/icons/box2.svg')}}"></div>
             <div class="price-quantity-block">
                 <div class="price">{{$code->price}}₽</div>
                 <div class="quantity">Remaining in stock: {{$code->quantity}}</div>

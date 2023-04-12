@@ -10,7 +10,7 @@
     <title>Main</title>
 </head>
 <body>
-   <a href="{{route('main')}}"> <img class="back" src="{{asset('img/icons/house.svg')}}"> </a>
+   <a href="{{route('main')}}"> <img class="back" src="{{asset('storage/img/icons/house.svg')}}"> </a>
 <div class="products-container">
     <h2 class="main-title">Products</h2>
     <div class="main">
@@ -22,9 +22,9 @@
                         <div class="product title">{{$product['title']}}</div>
                         <div class="product img">
                             @if($product['img'])
-                            <img class="pic" style="width: 300px;height: 200px" src="{{asset('img/'.$product['img'])}}">
+                            <img class="pic" style="width: 300px;height: 200px" src="{{asset('storage/img/'.$product['img'])}}">
                             @else
-                            <img class="pic" style="width: 100px;height: 200px" src="{{asset('img/icons/box2.svg')}}">
+                            <img class="pic" style="width: 100px;height: 200px" src="{{asset('storage/img/icons/box2.svg')}}">
                             @endif
                         </div>
                         <div class="product price">{{$product['price']}}₽</div>
@@ -35,11 +35,11 @@
                             <form action="{{route('product.delete', $product['symbolic_code'])}}" method="post">
                                 @csrf
                                 @method('delete')
-                                <button class="btn" type="submit"><img class="delete-pic" style="height:30px" src="{{asset('img/icons/x.svg')}}"> </button>
+                                <button class="btn" type="submit"><img class="delete-pic" style="height:30px" src="{{asset('storage/img/icons/x.svg')}}"> </button>
                             </form>
                         </div>
                         <div class="update">
-                            <a href="{{route('product.update.page', $product['symbolic_code'])}}" class="btn" type="submit"><img class="update-pic" style=" height:20px" src="{{asset('img/icons/pencil.svg')}}"></a>
+                            <a href="{{route('product.update.page', $product['symbolic_code'])}}" class="btn" type="submit"><img class="update-pic" style=" height:20px" src="{{asset('storage/img/icons/pencil.svg')}}"></a>
                         </div>
                     </div>
                 </div>
