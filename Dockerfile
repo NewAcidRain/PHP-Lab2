@@ -9,5 +9,7 @@ RUN set -ex \
 RUN docker-php-ext-install opcache
 COPY ./docker/php-fpm/opcache.ini /usr/local/etc/php/conf.d/opcache.ini
 COPY . /var/www/html
+RUN chown -R www-data:www-data /var/www
+
 
 WORKDIR /var/www/html
