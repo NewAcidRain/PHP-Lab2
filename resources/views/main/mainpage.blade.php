@@ -14,12 +14,12 @@
             <a class="box-links" href="{{route('products')}}">
             <div class="products">
                 <h3 class="title">Products</h3>
-                <img class="img" src="{{asset('img/icons/box-seam.svg')}}">
+                <img class="img" src="{{asset('storage/icons/box-seam.svg')}}">
             </div></a>
             <a class="box-links" href="{{route('category.main')}}">
             <div class="categories">
                 <h3 class="title">Categories</h3>
-                <img class="img" src="{{asset('img/icons/list-check.svg')}}">
+                <img class="img" src="{{asset('storage/icons/list-check.svg')}}">
             </div></a>
         </div>
     </div>

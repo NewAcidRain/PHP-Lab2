@@ -33,7 +33,7 @@
                     <option>{{$category['title']}}</option>
                 @endforeach
             </select>
-            <div class="pic"><img style="width: 300px" src="{{asset('storage/img/'.$code->img)}}"></div>
+            <div class="pic"><img style="width: 300px" src="{{asset('storage/'.$code->img)}}"></div>
             <label for="img">Img: <input class="input-fields" name="img" id="img" type="file"></label>
         </label><br>
             <input type="submit" class="update-btn" value="Update">

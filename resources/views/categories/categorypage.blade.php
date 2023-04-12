@@ -10,7 +10,7 @@
     <title>Categories</title>
 </head>
 <div>
-    <a href="{{route('main')}}"><img class="back" src="{{asset('storage/img/icons/house.svg')}}"></a>
+    <a href="{{route('main')}}"><img class="back" src="{{asset('storage/icons/house.svg')}}"></a>
     <div class="categories-container">
         <h2 >Category</h2>
     <div class="categories">
