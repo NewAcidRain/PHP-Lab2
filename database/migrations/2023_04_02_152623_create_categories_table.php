@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('symbolic_code');
             $table->boolean('active')->default('true');
             $table->dateTime('creation_date');
-
+            $table->unsignedBigInteger('parent_id')->nullable();
             $table->timestamps();
         });
     }
