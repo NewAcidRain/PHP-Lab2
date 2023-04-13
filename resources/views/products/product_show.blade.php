@@ -18,13 +18,12 @@
             <div class="price-quantity-block">
                 <div class="price">{{$code->price}}₽</div>
                 <div class="quantity">Remaining in stock: {{$code->quantity}}</div>
-                <div class="creation_date">{{$code->creation_date}}</div>
+                <div class="categories">{{$code->category->tilte}}</div>
             </div>
         </div>
         @else
         <div class="img-price-block">
-            <div class="img"><img class="img-pic" style="width: 300px;height: 500px" src="{{asset('storage/icons/box2.svg')}}"></div>
-            <div class="img"><img class="img-pic" style="width: 300px;height: 500px" src="{{asset('storage/icons/box2.svg')}}"></div>
+            <div class="img"><img class="img-pic" style="width: 300px" src="{{asset('storage/icons/box2.svg')}}"></div>
             <div class="price-quantity-block">
                 <div class="price">{{$code->price}}₽</div>
                 <div class="quantity">Remaining in stock: {{$code->quantity}}</div>

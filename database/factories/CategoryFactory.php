@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 //use Dotenv\Util\Str;
+use App\Models\Category;
 use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -23,7 +24,7 @@ class CategoryFactory extends Factory
             'symbolic_code' => fake()-> uuid,
             'active' => true,
             'creation_date' => fake()->dateTime,
-            'parent' => fake()->title
+            'parent' => Category::all()->random('id')
         ];
     }
 }
