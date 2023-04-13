@@ -19,7 +19,6 @@ class CategoryFactory extends Factory
      */
     public function definition(): array
     {
-        $parent = Category::all()->random('id');
         $title = fake()->words(2,true);
         $symbolic_code = Str::slug($title);
 
@@ -27,8 +26,6 @@ class CategoryFactory extends Factory
             'title' =>$title,
             'symbolic_code' => $symbolic_code,
             'active' => true,
-            'creation_date' => fake()->dateTime,
-            'parent' => $parent
-        ];
+            'creation_date' => fake()->dateTime,];
     }
 }

@@ -13,8 +13,13 @@ class CategorySeeder extends Seeder
      */
     public function run(): void
     {
-        Category::factory()
-            ->count(100)
-            ->create();
+       $categories = Category::factory()->count(100)->create();
+        foreach ($categories as $category) {
+            if ($category->id != 1) { // пропускаем корневую категорию
+                $parent = $categories->random();
+                $category->parent()->associate($parent);
+                $category->save();
+            }
+        }
     }
 }
