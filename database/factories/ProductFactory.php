@@ -19,17 +19,17 @@ class ProductFactory extends Factory
      */
     public function definition(): array
     {
-        $title = fake()->words(2,true);
+        $title = fake()->words(2, true);
         $symbolic_code = Str::slug($title);
         return [
-            'title'=>$title,
-            'symbolic_code'=>$symbolic_code,
-            'description'=>fake()->text,
-            'creation_date'=>fake()->dateTime,
-            'price'=>fake()->numberBetween(200,4000),
-            'img'=>'',
-            'quantity'=>fake()->numberBetween(5,100),
-            'category_id'=>Category::all()->random()->id
+            'title' => $title,
+            'symbolic_code' => $symbolic_code,
+            'description' => fake()->text,
+            'creation_date' => fake()->dateTime,
+            'price' => fake()->numberBetween(200, 4000),
+            'img' => '',
+            'quantity' => fake()->numberBetween(5, 100),
+            'category_id' => Category::all()->random()->id
         ];
     }
 }
