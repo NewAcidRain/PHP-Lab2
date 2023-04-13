@@ -22,7 +22,7 @@ class ProductFactory extends Factory
         $title = fake()->words(2,true);
         $symbolic_code = Str::slug($title);
         return [
-            'title'=>fake()->words(2,true),
+            'title'=>$title,
             'symbolic_code'=>$symbolic_code,
             'description'=>fake()->text,
             'creation_date'=>fake()->dateTime,
