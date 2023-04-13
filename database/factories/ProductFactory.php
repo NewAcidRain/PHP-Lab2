@@ -4,7 +4,7 @@ namespace Database\Factories;
 
 use App\Models\Category;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Psy\Util\Str;
+use Illuminate\Support\Str;
 use function Symfony\Component\Translation\t;
 
 /**
@@ -20,7 +20,7 @@ class ProductFactory extends Factory
     public function definition(): array
     {
         $title = fake()->words(2,true);
-        $symbolic_code = Str::slug($title,'-');
+        $symbolic_code = Str::slug($title);
         return [
             'title'=>fake()->words(2,true),
             'symbolic_code'=>$symbolic_code,
