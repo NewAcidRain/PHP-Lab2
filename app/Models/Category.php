@@ -21,8 +21,8 @@ class Category extends Model
 
     }
 
-    public function parent(): belongsToMany
+    public function parent(): belongsTo
     {
-        return $this->belongsToMany(Category::class, 'categories', 'category_id');
+        return $this->belongsTo(Category::class, 'parent_id', 'id');
     }
 }
