@@ -19,12 +19,13 @@ class CategoryFactory extends Factory
      */
     public function definition(): array
     {
+        $parent = Category::all()->random('id');
         return [
             'title' => fake()->words(1,true),
             'symbolic_code' => fake()-> uuid,
             'active' => true,
             'creation_date' => fake()->dateTime,
-            'parent' => Category::all()->random('id')
+            'parent' => $parent
         ];
     }
 }
