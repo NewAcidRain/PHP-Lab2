@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
-use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
 use Illuminate\View\View;
 
 class CategoryController extends Controller
@@ -26,7 +24,7 @@ class CategoryController extends Controller
         }
     }
 
-    public function sortByPrice(Category $categories)
+    public function sortByPrice(Category $categories): View
     {
         $products = '';
         if (request()->choice == 'all') {

@@ -24,8 +24,8 @@ class FindCategory extends Command
     /**
      * Execute the console command.
      */
-    public function handle(Product $product):void
+    public function handle(Product $product): void
     {
-        echo $product->find($this->argument('id'))->category->symbolic_code;
+        $this->info($product->query()->find('id' ,$this->argument('id'))->category->symbolic_code);
     }
 }
