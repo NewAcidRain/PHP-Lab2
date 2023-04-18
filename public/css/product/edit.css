@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+}
+
+.main-block{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width: 1000px;
+    height: 700px;
+    border-radius: 15px;
+    -webkit-box-shadow: -2px 10px 39px 12px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -2px 10px 39px 12px rgba(34, 60, 80, 0.2);
+    box-shadow: -2px 10px 39px 12px rgba(34, 60, 80, 0.2);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.description{
+    width: 500px;
+    height: 200px;
+}
+
+.title, .price{
+    margin-left: 23px;
+}
+
+.description{
+    margin-bottom: 15px;
+    background: none;
+}
+.input-fields{
+    margin-bottom: 20px;
+    width: 300px;
+    height: 25px;
+    background: none;
+}
+
+.update-btn{
+    height: 30px;
+    cursor: pointer;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.border{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
